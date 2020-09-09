@@ -2,11 +2,26 @@
 
 # TODO: Decompose into functions
 def move_forward(length):
+    '''
+    Function to specify amount to move forward by
+
+    parameters:
+        length: The number of steps to move forward
+    '''
     print("* Move Forward "+str(length))
 
 def turn_right(degrees):
+    '''
+    Function for specified how much to turn by
+
+    Parameters:
+        degrees: amount to turn by specified in degrees
+    '''
     print("* Turn Right "+str(degrees)+" degrees")
 def move_square():
+    '''
+    Function for moving in a square of size 'size'
+    '''
     size = 10
     print("Moving in a square of size "+str(size))
     for i in range(4):
@@ -14,6 +29,9 @@ def move_square():
         move_forward(size)
         turn_right(degrees)
 def move_rectangle():
+    '''
+    Function for moving in a rectangleof size 'length'
+    '''
     length = 20
     width = 10
     print("Moving in a rectangle of "+str(length)+" by "+str(width))
@@ -25,6 +43,9 @@ def move_rectangle():
         turn_right(degrees)
 
 def move_circle():
+    '''
+    Function for moving in a circle
+    '''
     print("Moving in a circle")
     degrees = 1
     for i in range(360):
@@ -33,6 +54,9 @@ def move_circle():
         turn_right(degrees)
 
 def square_dancing():
+    '''
+    Function displays 4 squares of side size 20
+    '''
     print("Square dancing - 3 squares of size 20")
     length = 20
     size = 20
@@ -45,6 +69,9 @@ def square_dancing():
             turn_right(degrees)
             
 def crop_circle():
+    '''
+    Function display 4 cropped circles
+    '''
     print("Crop circles - 4 circles")
     length = 20
     degrees = 1
